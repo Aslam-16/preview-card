@@ -1,0 +1,91 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Fraunces;
+    
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(0, 0%, 100%);
+    width:500px;
+    align-items: stretch;
+    gap:25px;
+    border-radius: 4%;
+    
+}
+img{
+    
+            width: 250px;
+            height: 100%;
+            border-top-left-radius: 4%;
+            border-bottom-left-radius: 4%;
+            
+        
+}
+#main-content{
+    width:230px;
+    padding: 20px;
+    padding-left: 0px;
+}
+#title{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 3px;
+    
+    font-family: Montserrat;
+    font-size: 14px;
+}
+p {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-family: Montserrat;
+    
+}
+h1{
+    font-family: Fraunces;
+    font-weight:700px;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    font-family: Fraunces;
+    padding: 10px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    border: 0;
+}
+#line{
+    text-decoration: line-through;
+}
+#amt{
+    display: flex;
+            align-items: center;
+            gap: 15px;
+}
+
+@media only screen and (max-width:530px){
+   #main{
+    flex-direction: column;
+    width: 350px;
+   }
+   img{
+    src: url(./images/image-product-mobile.jpg);
+    width: 350px;
+    height:200px;
+    border-radius: 0%;
+    border-top-left-radius: 4%;
+        border-top-right-radius: 4%;
+   }
+   #main {
+    gap:2px;
+   }
+   #main-content {
+    align-self: center;
+    padding: 0px;
+    padding-bottom: 7%;
+    width: 300px;
+   }
+}
